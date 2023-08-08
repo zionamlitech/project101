@@ -5,6 +5,10 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> 
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@700&display=swap" rel="stylesheet">        
         <style>
          :root{
                 --grey: #172339;
@@ -51,7 +55,7 @@ body{
     position:absolute;
     align-items:center;
     text-align:center;
-    align-items:center;
+   ;
        
    
     
@@ -84,7 +88,8 @@ body{
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    top: calc(50% - 32px/2);
+    top: calc(52% - 24px/2);
+    margin-top:25px;
    
     
 
@@ -131,9 +136,10 @@ align-content: center;
 
 }
 .second-container.info{
+    position:relative;
     display: flex;
     flex-direction: column;
-    position: absolute;
+   
     width: 635px;
     height: 234px;
     left: 166px;
@@ -149,17 +155,20 @@ align-content: center;
     
     /* or 108% */
     letter-spacing: -1px;
+   
     
     color: #172339;
   }
  .info.header{
+     
     position:absolute;
     width: 635px;
     height: 405px;
     flex-shrink: 0; 
-
+    margin-top:220px;
 }
  .header h1{
+   position:absolute;
     display: flex;
     width: 635px;
     flex-direction: column;
@@ -167,21 +176,23 @@ align-content: center;
     color: #172339;
     /* Heading XL */
     font-size: 72px;
-    font-family: 'Epilogue';
+    font-family: 'Epilogue' sans-serif;
     font-weight: 700;
     line-height: 78px;
     letter-spacing: -1px; 
+    margin-top:200px;
 }
  .info.sub-header {
      position: absolute;
  width: 350px;
  height: 96px;
  left: 166px;
- top: 472px;
+ 
  
  
  }
- .info.sub-header p{
+ .sub-header p{
+     position: absolute;
     color: var(--grey, #49566D); 
     /* Body */
     font-family: 'Epilogue';
@@ -192,15 +203,15 @@ align-content: center;
     
     /* or 178% */
     letter-spacing: 0.1px;
- 
+   margin-top:420px;
  }
  
  .btn{
-     
-     top: 58px;
-     width: 256px;
+     position:absolute;
+     margin-top: 458px;
+     width: 255px;
  height: 65px;
- left: 166.5px;
+ margin-left: -166.5px;
  text-align: center;
   padding: 20px;
   border-radius: 8px;
@@ -211,7 +222,7 @@ align-content: center;
  
  }
  .btn {
-   
+   width:225px;
  height: 61px;
  left: 166.5px;
  top: 620px;
@@ -226,18 +237,17 @@ align-content: center;
  }
  
  .btn a{
-    
      text-decoration-color: #FAF8F6;
-     text-decoration: none;
- 
- 
- /* identical to box height, or 178% */
- letter-spacing: -0.18px;
- 
- /* Cream White */
- color: #FAF8F6;
+    text-decoration: none;
+    /* identical to box height, or 178% */
+    letter-spacing: -0.18px;
+
+    /* Cream White */
+    color: #FAF8F6;
+    margin-left:-11px;
+    font-family:'Epilogue' sans-serif;
  }
- .second-container.curve{
+ .curve{
     max-width:100%;
     min-width:100%;
  }
@@ -247,7 +257,7 @@ align-content: center;
     height: 32px;
     flex-shrink: 0; 
     left: 235px;
-    margin-top:-565px;
+    margin-top:-505px;
     
  }
  .second-container.mg1{
@@ -259,7 +269,7 @@ align-content: center;
     width: 350px;
     height: 600px;
     margin-left: 395px;
-    margin-top: -320px;
+    margin-top: 20px;
     background-image:url(image-hero-portrait.png);
     background-repeat:no-repeat;
    
@@ -412,12 +422,16 @@ top: 1133.15px;
 border: 2px solid #FAF8F6;
 transform: matrix(-1, 0, 0, 1, 0, 0);
 }
+.g{
+    margin-left:-280px;
+    margin-top:-120px;
+}
 .text{
   display: flex;
   flex-direction: column;
   width: 350px;
 height: 369px;
-left: 801px;
+left: 601px;
 top: 1060px;
 }
 
@@ -429,6 +443,9 @@ right: 14.57%;
 top: calc(50% - 56px/2 - 156.5px);
 color: #FAF8F6
 
+}
+.top h1{
+    margin-left:-110px;
 }
 
 .text.center{
@@ -442,6 +459,10 @@ bottom: 26.56%;
 
 
 }
+.top span{
+    font-weight:400;
+   font-size:18px;
+}
 .center p{
   font-family: 'Epilogue';
 font-style: normal;
@@ -454,6 +475,7 @@ letter-spacing: 0.1px;
 
 /* Cream */
 color: #F3EDE7;
+margin-left:-114px;
 
 }
 .text.bottom{
@@ -477,7 +499,7 @@ letter-spacing: -0.18px;
 color: #FAF8F6;
 }
 h2 {
-  font-family: 'Epilogue';
+  font-family: 'Epilogue' sans-serif;
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
@@ -491,13 +513,13 @@ color: #FAF8F6;
 }
 h3{
   
-left: 0%;
+left: 10%;
 right: 45.71%;
 top: 92.95%;
 bottom: 0%;
 
 /* Heading S */
-font-family: 'Epilogue';
+font-family: 'Epilogue' sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -672,18 +694,26 @@ color: #F3EDE7;
          font-weight:400;
          font-family:sans-serif;
          font-size: 56px;
-    }
-    span{
-       font-weight:400;
-    }
-.nt {
-    display:none;
-    font-weight:400px;
+}
+    
+.nt{
+        display:initial;
+        
+}
+.np{
+        display:none;
+}
+.header br:nth-child(2){
+        display:none
+}
+.header b:nth-child(){
+        display:none;
+        
 }
 .mg1:hover{
         background:radial;
-    }
-    .facebook a:hover{
+}
+.facebook a:hover{
     background:#ccc;
     
 }
@@ -725,6 +755,25 @@ color: #F3EDE7;
     .btn a{
         font-size:14px;
     }
+    .nt{
+        display:none;
+        
+    }
+    .np{
+        display:initial;
+    }
+    .header h1 br:nth-child(2){
+        display:none;
+    }
+     .header br:nth-child(1){
+        display:none;
+    }
+    .header b:nth-child(1){
+        display:none;
+    }
+    span{
+       font-weight:400;
+    }
 
 }
 @media  screen and (max-width: 768px)
@@ -752,8 +801,9 @@ color: #F3EDE7;
        position: absolute;
         width: 689px;
         height: 482px;
-        left: 39px;
+        left: 69px;
         top: 176px;
+        margin-left:60px;
     }
     
     .second-container.curve{
@@ -822,19 +872,18 @@ color: #F3EDE7;
          font-weight:400;
          font-family:sans-serif;
          font-size: 56px;
+          font-style:normal;
     }
     
-    .nt{
-        display:none;
-        
+    
+     .header p :nth-of-type(odd) {
+        font-weight:400;
+        font-size:56px;
+        font-style:normal;
+        font-family: sans-serif;
+      
     }
-    .np{
-        display:initial;
-    }
-     .header br:nth-child(2){
-        display:none;
-    }
-    .header b:nth-child(1){
+    .header br:nth-of-type(even){
         display:none;
     }
     span{
@@ -881,12 +930,12 @@ color: #F3EDE7;
 
 
     }
-    .info.btn{
+    .btn{
         position: absolute;
         width: 226px;
         height: 61px;
-        left: 39.5px;
-        top: 557px;
+        left: 165.5px;
+        top: 157px;
     }
     .btn:hover{
         display:none;
@@ -945,15 +994,7 @@ color: #F3EDE7;
     max-width:100%;
     min-width:100%;
 }
-.mm {
-    
-    position: absolute;
-    width: 49.27px;
-    height: 40px;
-    margin-left: 509.27px;
-    margin-top: 315px;
-    transform: matrix(-1, 0, 0, 1, 0, 0) tranasiton();
-}
+
 .g{
     position: absolute;
     width: 49.27px;
@@ -968,7 +1009,7 @@ color: #F3EDE7;
    
     width: 573px;
     height: 282px;
-    left: 98px;
+    left: 198px;
     text-align:center;
     align-items:center;
     
@@ -1013,9 +1054,9 @@ color: #F3EDE7;
 
 .center{
     position: absolute;
-    left: 10%;
+    left: 40%;
     right: 11%;
-    top: 71.21%;
+    top: 69.21%;
     bottom: 34.75%;
 
     font-family: 'Epilogue';
@@ -1195,6 +1236,10 @@ color: #49566D;
 .containing{
     margin-right:8.8%;
 }
+.top h1{
+    font-size:28px;
+    margin-top:30px;
+}
 
 
 }
@@ -1247,14 +1292,14 @@ color: #49566D;
                 .curve{
                     width:10.5%;
                     
-                    margin-top:-230px;
+                    margin-top:145px;
                     
                 }
                 .second-container .info{
                     width: 343.5px;
                     height: 325.32px;
                     left: 15.5px;
-                    top: 128px;
+                    margin-top: -228px;
 
                 }
                 .info.header{
@@ -1270,17 +1315,29 @@ color: #49566D;
                     font-size:400;
                     color: #172339;
                     font-size: 38px;
-                    font-family: 'Epilogue';
+                    font-family: 'Epilogue' sans-serif;
                     line-height: 44px;
                     letter-spacing: -0.528px; 
 
                 }
                 .let::first-letter{
-                    font-weight:400;
-                    font-family:'EPILOGUE';
-                    font-size: 38px;
-                    font-style:normal;
-                 }
+                font-weight:400;
+                font-family:sans-serif;
+                font-size: 38px;
+                font-style:normal;
+            }
+    
+    
+     .header p :nth-of-type(odd) {
+        font-weight:400;
+        font-size:38px;
+        font-style:normal;
+        font-family: sans-serif;
+      
+    }
+    .header br:nth-of-type(odd){
+        display:initial;
+    }
                 .info.sub-header{
                     width:33px;
                     display: flex;
@@ -1292,14 +1349,15 @@ color: #49566D;
                 .sub-header{
                     display:flex;
                 }
-               .info.sub-header p{
+               .sub-header p{
                    
                     color: var(--grey, #49566D);
                     font-size: 10px;
-                    font-family: 'Epilogue';
+                    font-family: 'Epilogue' sans-serif;
                     line-height: 28px;
                     letter-spacing: 0.089px; 
                     text-align:left;
+                    margin-top:290px;
                 }
                 .sub-header p{
                     font-size: 10px;
@@ -1332,17 +1390,19 @@ color: #49566D;
                     width: 343px;
                      height:22%;
                     left: -226px;
-                    top: 120%;
+                    top: 60%;
 
                 }
                 .btn{
                     margin-top:2%;
+                    margin-left:10px;
                 }
                 .end{
                      display:inline-block;
                     margin-top:551px;
                     width:270px;
                     height: 320px;
+                   
                     
                 }
                 
@@ -1481,7 +1541,7 @@ color: #49566D;
                </div> -->
             <div class="info">
                 <div class="header">
-                 <h1 ><p class='let' alt='let'>A super solution <br class='np'><Span>for your</span><br class='nt'> business.</p></h1>
+                 <h1 ><p class='let' alt=''>A super solution <br><Span>for your</span><br> business.</p></h1>
                </div>
                <div class="sub-header">
                    <p>
@@ -1528,7 +1588,7 @@ color: #49566D;
                 </div>
                       
                     <div class="g">
-                           <img src="Path 2.png" alt="">
+                           <img src="Path 2.svg" alt="">
                         </div> 
                       <div class="text">
                         
@@ -1542,8 +1602,9 @@ color: #49566D;
                     <div class="bottom">
                        <h2>JEREMY ROBINSON</h2>
                     </div>
+                     <h3>CMO, <span>FYLO</span></h3>
                     <br>
-                        <h3>CMO, <span>FYLO</span></h3>
+                       
         
                 </div>
                  
